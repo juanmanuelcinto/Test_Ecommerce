@@ -1,7 +1,7 @@
 # Test E-commerce website with Selenium and Python
 
 ## Features
-  * Take screenshots of your category pages.
+  * Take screenshots of your e-commerce pages.
 
 ## Requeriments
   * Python3
@@ -19,9 +19,9 @@
   * base_url: Define your e-commerce base url.
   * 404_title: Set your 404 Page title to avoid take screenshots of wrong paths.
 
-## Categories CSV
+## Pages CSV
 
-**categories.csv**
+**pages.csv**
 
 To export your categories from a Magento 2 website you can use the next module:
   * https://github.com/juanmanuelcinto/JMC_ExportCategories

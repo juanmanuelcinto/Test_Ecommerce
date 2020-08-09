@@ -2,8 +2,7 @@ import unittest
 from selenium import webdriver
 from pyunitreport import HTMLTestRunner
 from config import Config
-from categories import CategoriesTest
-import csv
+from pages import PagesTest
 
 class InitTest(unittest.TestCase):
 
@@ -11,11 +10,11 @@ class InitTest(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = webdriver.Chrome(executable_path='./../chromedriver')
 
-    def test_categories(self):
+    def test_pages(self):
         config = Config('config.csv')
-        categories = CategoriesTest(self.driver, config)
+        pages = PagesTest(self.driver, config)
 
-        categories.takeScreenshots()
+        pages.takeScreenshots()
 
     def tearDown(self):
         self.driver.quit()
