@@ -1,4 +1,2 @@
 base_url,http://demo-store.seleniumacademy.com/
-screenshot_width,375
-load_wait,3
-404_title,404 Not Found 1
+404_title,404 Not Found

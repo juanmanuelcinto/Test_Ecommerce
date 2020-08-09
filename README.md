@@ -1,17 +1,27 @@
 # Test E-commerce website with Selenium and Python
 
+## Features
+  * Take screenshots of your category pages.
+
 ## Requeriments
   * Python3
   * Selenium
   * Chrome Web Driver
+
+## Run
+  * To run your program you have to use the command python3 init.py.
   
 ## Configuration File
- 
-Use the configuration file to set your test values.
+
+**config.csv**
  
 ### Options
   * base_url: Define your e-commerce base url.
-  * screeshot_width: Define your screeswhot width. Default value: 768px.
-  * load_wait: Recommended to increase this option number in slow sites.
-  * category_test: Enable category test.
-  * use_auto_height: Use auto height. If you disabled this option, need to add a third column in your csv file with the screen height.
+  * 404_title: Set your 404 Page title to avoid take screenshots of wrong paths.
+
+## Categories CSV
+
+**categories.csv**
+
+To export your categories from a Magento 2 website you can use the next module:
+  * https://github.com/juanmanuelcinto/JMC_ExportCategories
